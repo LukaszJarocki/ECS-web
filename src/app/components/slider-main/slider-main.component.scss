@@ -1,0 +1,168 @@
+header{
+  .carousel-indicators [data-bs-target] {
+    position: relative;
+    width: 500px; /* change width */
+    height: 50px; /* change height */
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #000000;
+    font-size: 30px;
+    color: aquamarine;
+    margin-left: 600px;
+  }
+  .carousel-indicators .btn-title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;padding: 0;
+    color: #000000;
+    font-size: 30px;
+  }
+  .slider-container{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .slider-container img{
+    display: none;
+  }
+  
+  .slider-container img.image-active{
+    display: block;
+    width: 100%;
+    height: 870px;
+  }
+  
+  ///////// dots/indicators
+  
+  .slider-dot-container{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 1rem;
+    z-index: 500;
+  }
+  
+  .dot{
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    background-color: #fff;
+    display: inline-block;
+    transition: opacity 0.6s ease;
+    opacity: 0.5;
+    z-index: 100;
+  }
+  
+  .active,
+  .dot:hover{
+    opacity: 1;
+  }
+  ///////// dots/indicators
+  
+  .slider-popup-container{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 1rem;
+    z-index: 500;
+  }
+  
+  .popup{
+    cursor: pointer;
+    height: 130px;
+    width: 130px;
+    margin: 0 5px;
+    background-color: #fff;
+    display: inline-block;
+    transition: opacity 0.6s ease;
+    opacity: 0.5;
+    z-index: 100;
+  }
+  
+  .active,
+  .popup:hover{
+    opacity: 1;
+  }
+  
+  
+  // FADE EFFECTS
+  .fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4s;
+    }
+    to {
+      opacity: 1s;
+    }
+  }
+  
+  .btn-slider{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: white;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .btn-prev{
+    left: 0;
+  }
+  .btn-next{
+    right: 0;
+  }
+  .icon-slider{
+    opacity: 0.5;
+    transition: all 0.15s ease;
+  }
+  .icon-slider:hover{
+    color: white;
+    opacity: 0.9;
+  }
+  .icon-slider:active{
+    opacity: 0.5;
+  }
+  
+  //////
+  /// 
+  
+  .containers{
+    width: 90%;
+    margin: 0 auto;
+  }
+}

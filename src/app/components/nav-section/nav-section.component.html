@@ -1,0 +1,28 @@
+<nav
+  class="navbar"
+  (scroll)="onscroll()"
+  [ngClass]="navbarfixed ? 'fixed' : 'nav'">
+  <div class="container-nav">
+    <input type="checkbox" id="check" />
+    <label for="check" class="checkbtn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+      </svg>
+    </label>
+    <!-----------------------------------LOGO------------------------------->
+    <a href="" class="navbar-brand"
+      ><img class="logo" src="../../../assets/logo/ecs_logo_transparent (1).png" alt=""></a
+    >
+    <!-----------------------------------MENU LIST------------------------------->
+    <ul class="ul-list">
+      <li class="doradztwo"><a (click)="toHome()" routerLink="/DoradztwoIKonsultingSectionComponent"   routerLinkActive="active">Doradztwo i konsulting</a></li>
+      <li class="doradztwo"><a (click)="toAbout()" routerLink="/OutsourcingProcesowSectionComponent" routerLinkActive="active">Outsourcing procesów</a></li>
+      <li class="doradztwo"><a (click)="toOffer()" routerLink="/WspolpraceSectionComponent" routerLinkActive="active">Współprace</a></li>
+      <li class="doradztwo"><a (click)="toDestination()" routerLink="/NaszeDoswiadczenieSectionComponent" routerLinkActive="active">Nasze doświadczenie</a></li>
+      <li class="doradztwo"><a (click)="toDestination()" routerLink="/InspiracjeSectionComponent" routerLinkActive="active">Inspiracje</a></li>
+      <li class="kontakt"><a (click)="toDestination()" routerLink="/KontaktSectionComponent" routerLinkActive="active">Kontakt</a></li>
+      <li class="doradztwo"><button></button></li>
+      <li class="doradztwo"><button></button></li>
+    </ul>
+  </div>
+</nav>
