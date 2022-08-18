@@ -1,21 +1,55 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { slider } from '../shared/slider';
 
-interface sliderImage{
-  imageSrc: string;
-  imageAlt: string;
-  titleImage: string;
-}
+
 
 @Component({
   selector: 'app-slider-main',
   templateUrl: './slider-main.component.html',
   styleUrls: ['./slider-main.component.scss']
 })
-export class SliderMainComponent implements OnInit {
+export class SliderMainComponent implements OnInit  {
+
+@Input() images: slider[] = []
+@Input() indicators = true;
+@Input() sliderSectionInfo = true;
+@Input() controls = true;
+@Input() autoSlide = false;
+@Input() slideInterval = 5000;
 
 
-  ngOnInit(): void {
+selectedIndex = 0;
 
+ngOnInit(): void{
+  if(this.autoSlide){
+    this.autoSlideImages()
   }
+}
 
+autoSlideImages(): void{
+  setInterval(()=>{
+    this.onNextClick()
+  }, this.slideInterval)
+}
+
+selectImage(index: number): void{
+  this.selectedIndex = index;
+}
+
+onPrevClick(){
+  if(this.selectedIndex ===0){
+    this.selectedIndex = this.images.length -1;
+  }
+  else{
+    this.selectedIndex--
+  }
+}
+onNextClick(){
+  if(this.selectedIndex === this.images.length -1){
+    this.selectedIndex = 0;
+  }
+  else{
+    this.selectedIndex++;
+  }
+}
 }

@@ -14,7 +14,8 @@ import { InspiracjeSectionComponent } from './components/inspiracje-section/insp
 import { KontaktSectionComponent } from './components/kontakt-section/kontakt-section.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-
+import { FooterComponent } from './components/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -27,14 +28,15 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     WspolpraceSectionComponent,
     NaszeDoswiadczenieSectionComponent,
     InspiracjeSectionComponent,
-    KontaktSectionComponent
+    KontaktSectionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     CarouselModule,
-    
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
