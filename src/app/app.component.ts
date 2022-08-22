@@ -11,11 +11,11 @@ export class AppComponent {
   images: any = [
     {
       imageSrc:
-      '../../../assets/photos/homepage_ecs_slajder_strategia.png',
+      '../../../assets/photos/Rectangle 57.png',
       imageAlt:
       'nnnnn',
       titlePhoto:
-      'Tytuł nr 1',
+      'Strategie biznesowe',
       titleInfo:
       'Nasi specjaliści zadbają o Twoją markę onLine Ty skup się na biznesie.',
       linkInfo:
@@ -29,11 +29,11 @@ export class AppComponent {
     },
     {
       imageSrc:
-      '../../../assets/photos/pexels-tom-fisk-10407692.jpg',
+      '../../../assets/photos/Rectangle 57 (1).png',
       imageAlt:
       'iiii',
       titlePhoto:
-      'Tytuł nr 2',
+      'Digital marketing',
       titleInfo:
       'Nasi specjaliści zadbają o Twoją markę onLine Ty skup się na biznesie.',
       linkInfo:
@@ -47,11 +47,65 @@ export class AppComponent {
     },
     {
       imageSrc:
-      '../../../assets/photos/office.jpg',
+      '../../../assets/photos/Rectangle 57.png',
       imageAlt:
       'jjjj',
       titlePhoto:
-      'Tytuł nr 3',
+      'Procesy HR',
+      titleInfo:
+      'Nasi specjaliści zadbają o Twoją markę onLine Ty skup się na biznesie.',
+      linkInfo:
+      'https://drive.google.com/drive/folders/1FShzjnJLm9QO_HcOnjkj74rCxgnKyU90',
+      titleText:
+      'Prowadzimy kompleksową i  stałą obsługę marketingową dla firm z segmentu MŚP. Sprawdź nasze specjalizacje.',
+      titleTextLink:
+      'Czytaj więcej',
+      imageIcon:
+      '../../../assets/icon/right-arrow-2.png'
+    },
+    {
+      imageSrc:
+      '../../../assets/photos/Rectangle 57 (1).png',
+      imageAlt:
+      'iiii',
+      titlePhoto:
+      'Rekrutacje RPO',
+      titleInfo:
+      'Nasi specjaliści zadbają o Twoją markę onLine Ty skup się na biznesie.',
+      linkInfo:
+      'https://drive.google.com/drive/folders/1FShzjnJLm9QO_HcOnjkj74rCxgnKyU90',
+      titleText:
+      'Prowadzimy kompleksową i  stałą obsługę marketingową dla firm z segmentu MŚP. Sprawdź nasze specjalizacje.',
+      titleTextLink:
+      'Czytaj więcej',
+      imageIcon:
+      '../../../assets/icon/right-arrow-2.png'
+    },
+    {
+      imageSrc:
+      '../../../assets/photos/Rectangle 57.png',
+      imageAlt:
+      'iiii',
+      titlePhoto:
+      'Marketing MBO',
+      titleInfo:
+      'Nasi specjaliści zadbają o Twoją markę onLine Ty skup się na biznesie.',
+      linkInfo:
+      'https://drive.google.com/drive/folders/1FShzjnJLm9QO_HcOnjkj74rCxgnKyU90',
+      titleText:
+      'Prowadzimy kompleksową i  stałą obsługę marketingową dla firm z segmentu MŚP. Sprawdź nasze specjalizacje.',
+      titleTextLink:
+      'Czytaj więcej',
+      imageIcon:
+      '../../../assets/icon/right-arrow-2.png'
+    },
+    {
+      imageSrc:
+      '../../../assets/photos/Rectangle 57 (1).png',
+      imageAlt:
+      'iiii',
+      titlePhoto:
+      'WWW dla biznesu',
       titleInfo:
       'Nasi specjaliści zadbają o Twoją markę onLine Ty skup się na biznesie.',
       linkInfo:
@@ -64,4 +118,30 @@ export class AppComponent {
       '../../../assets/icon/right-arrow-2.png'
     }
   ]
+
+  specialtiesPhotos: any = [
+    {
+      src: '../../../assets/photos/rafiner.png',
+      name: 'Przemysł i produkcja'
+    },
+    {
+      src: '../../../assets/photos/rafiner.png',
+      name: 'Branża IT'
+    },
+    {
+      src: '../../../assets/photos/Rectangle 74.png',
+      name: 'Retail'
+    },
+    {
+      src: '../../../assets/photos/rafiner.png',
+      name: 'Legal i Finanse'
+    },
+    {
+      src: '../../../assets/photos/Rectangle 74.png',
+      name: 'Nieruchomości'
+    }
+  ]
+
+  
+ 
 }

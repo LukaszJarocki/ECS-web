@@ -1,19 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700;800&display=swap');
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
-}
-body {
   font-family: "Overpass", sans-serif;
   color: white;
+
 }
 
-/* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

@@ -10,62 +10,85 @@
     <!--BRANDS -->
     <div class="brands-row">
         <div class="brand">
-            <img class="logo" src="../../../assets/logo/ecs_logo_color (2).png" alt="">
+            <img class="logo" src="../../../assets/logo/Rectangle 62.png" alt="">
         </div>
         <div class="brand">
-            <img class="logo" src="../../../assets/logo/ecs_logo_color (2).png" alt="">
+            <img class="logo" src="../../../assets/logo/Rectangle 63.png" alt="">
         </div>
         <div class="brand">
-            <img class="logo" src="../../../assets/logo/ecs_logo_color (2).png" alt="">
+            <img class="logo" src="../../../assets/logo/Rectangle 64.png" alt="">
         </div>
         <div class="brand">
-            <img class="logo" src="../../../assets/logo/ecs_logo_color (2).png" alt="">
+            <img class="logo" src="../../../assets/logo/Rectangle 67.png" alt="">
         </div>
         <div class="brand">
-            <img class="logo" src="../../../assets/logo/ecs_logo_color (2).png" alt="">
+            <img class="logo" src="../../../assets/logo/Rectangle 62.png" alt="">
         </div>
         <div class="brand">
-            <img class="logo" src="../../../assets/logo/ecs_logo_color (2).png" alt="">
+            <img class="logo" src="../../../assets/logo/Rectangle 63.png" alt="">
         </div>
     </div>
     <!--ARTICLE -->
-    <div class="article-one-row">
-        <img src="../../../assets/photos/pexels-tom-fisk-10407692.jpg" alt="">
+    <div class="article-one-row" 
+    >
+        <div class="one-col">
+            <img class="photos" [src]="imageSrc" alt=""
+            >
+  
+        </div>
         <div class="text-article">
-            <div class="title-article">
-                <div class="title-small"><span>NASI KLIENCI</span></div>
+            <div class="title-article"
+            >
+                <div class="title-small"
+                
+                >
+                <span   
+               >{{messageText}}</span></div>
                 <div class="line"></div>
             </div>
             <h2>Jak dotrzeć do nowych klientów? Jak wejść na nowe rynki? </h2>
             <p>Od lat produkujecie wysokiej jakości automatykę dla ciężkiego przemysłu, dystrybuujecie najwyższej klasy linie produkcyjne, sprzedajecie specjalistyczne  urządzenia miernicze itp. Jesteście ekspertami w swojej dziedzinie, jednak czujecie, że obszar marketingu i sprzedaż można by podkręcić, macie w końcu niewykorzystany potencjał wzrostu. Efekty zaczynają się od niezobowiązującej rozmowy. Precyzyjne dotarcie do właściwego klienta, wejście na nowe rynki, poprawa czytelności oferty, wskazanie korzyści płynących ze współpracy z Wami i wiele więcej...</p>
+            
+            
+            
             <ul>
-                <li><span>
-                    <img src="../../../assets/icon/accept-circular-button-outline.png" alt="" style="width:20px; height: 20px">
-                </span> Warsztaty komunikacyjne i marketingowe. Budowanie planów i strategii komunikacyjnych.</li>
-                <li><span>
-                    <img src="../../../assets/icon/accept-circular-button-outline.png" alt=""  style="width:20px; height: 20px">
-                </span>Kompleksowe tworzenie nowoczenych i angażujących Twoich potencjalnych klientów stron WWW</li>
-                <li><span>
-                    <img src="../../../assets/icon/accept-circular-button-outline.png" alt=""  style="width:20px; height: 20px">
-                </span>Projektowanie i obsługa kampanii digital marketingowych, skierowanych do właściwych odbiorców</li>
-                <li><span>
-                    <img src="../../../assets/icon/accept-circular-button-outline.png" alt=""  style="width:20px; height: 20px">
-                </span>Nowoczesna i spójna prezentacja wizerunku firmy. Systematyzowanie i układanie czytelnej oferty</li>
+                <li >
+                    <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                    <p>Warsztaty komunikacyjne i marketingowe. Budowanie planów i strategii komunikacyjnych.</p>
+                </li>
+                <li >
+                    <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                    <p>Kompleksowe tworzenie nowoczenych i angażujących Twoich potencjalnych klientów stron WWW</p>
+                </li>
+                <li >
+                    <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                    <p>Projektowanie i obsługa kampanii digital marketingowych, skierowanych do właściwych odbiorców</p>
+                </li>
+                <li >
+                    <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                    <p>Nowoczesna i spójna prezentacja wizerunku firmy. Systematyzowanie i układanie czytelnej oferty</p>
+                </li>
             </ul>
 
         </div>
-        <div class="menu-article">
-            <div class="menu">
+        <div class="menu-article" >
+            <div class="menu"
+            ng-class="{'active-img':true}">
                 <div class="menu-title">
-                    <span> Nasi klienci</span>
+                    <span> Nasze specjalizacje</span>
+                    <div class="subtitle">wybierz swoją branżę</div>
                 </div>
-                <ul><li>Przemysł i produkcja</li>
-                    <li>Branża IT</li>
-                    <li>Reatail</li>
-                    <li>Legal i Finanse</li>
-                    <li>MŚP</li>
-                    <li>Nieruchomości</li>
-                </ul>
+                <div *ngIf="indicators" class="carousel-title-container">
+                    <span *ngFor="let title of ourSpecjaltiesPhotos; let i=index" 
+                  class="title"
+                  [ngClass]="{'active': selectedIndex === i}"
+                  (click)="selectImage(i)"
+                  
+                  ><h2 class="title-photo"
+                  [ngClass]="{'active': selectedIndex === i}"
+                  (click)="onClick(title)"
+                  >{{title.name}}</h2></span>
+                  </div>
             </div>
         </div>
     </div>
@@ -74,40 +97,43 @@
             <h2>Właściwy człowiek na właściwym miejscu. </h2>
             <p>Rozwijasz swój biznes, pozyskujesz nowych klientów, nowe kontrakty , rozpoczynasz kolejne realizacje. Aby utrzymać oczekiwany przez klientów poziom jakościowy prac, potrzebujesz pozyskiwać właściwych ludzi, w szczególności inżynierów, specjalistów, doświadczoną w realizacji podobnych projektów kadrę kierowniczą. Jeżeli HR nie jest waszą domeną, warto zastanowić się nad skorzystaniem ze wsprawcia specjalistów, któryy mają na swoim koncie liczne projekty rekrutacyjne dla branży przemysłowej.</p>
             <ul>
-                <li>
-                    <span>
-                        <img src="../../../assets/icon/accept-circular-button-outline.png" alt="" style="width:20px; height: 20px">
-                    </span>
-                    Szeroki wachlarz usług rekrutacyjnych prowadzonych w ramach outsourcingu (m.in. sourcing, marketing rekrutacyjny, kampanie rekrutacyjne)</li>
-                <li>
-                    <span>
-                        <img src="../../../assets/icon/accept-circular-button-outline.png" alt="" style="width:20px; height: 20px">
-                    </span>
-                    Przemyślana i oparta na doświadczeniach strategia pozyskiwania/utrzymywania pracowników</li>
-                <li>
-                    <span>
-                        <img src="../../../assets/icon/accept-circular-button-outline.png" alt="" style="width:20px; height: 20px">
-                    </span>
-                    Działania towarzyszące, związane z budowaniem wizerunku pracodawcy (employer branding), badania satysfakcji pracowników i kandydatów</li>
+                <li >
+                    <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                    <p>Szeroki wachlarz usług rekrutacyjnych prowadzonych w ramach outsourcingu (m.in. sourcing, marketing rekrutacyjny, kampanie rekrutacyjne)</p>
+                </li>
+                <li >
+                    <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                    <p>Przemyślana i oparta na doświadczeniach strategia pozyskiwania/utrzymywania pracowników</p>
+                </li>
+                <li >
+                    <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                    <p>Działania towarzyszące, związane z budowaniem wizerunku pracodawcy (employer branding), badania satysfakcji pracowników i kandydatów</p>
+                </li>
             </ul>
 
+
         </div>
-        <img src="../../../assets/photos/pracownik.png" alt="">
+        <div class="img-col">
+            <img src="../../../assets/photos/Rectangle 74.png" alt="">
+        </div>
     </div>
     <div class="services">
-        <div class="text-article">
-            <div class="title-article">
-                <div class="title-small"><span>ROZWIĄZANIA I USŁUGI</span></div>
-                <div class="line"></div>
-            </div>
-            <div class="title-article">
-                <div class="title-article-left">
-                    <span class="span">Wychodzimy z założenia, że prowadząc biznes jesteś bardzo zajętą osobą. Niestety czas to zasób, którego każdemu z nas brakuje. <br><br>
-
-                        Naszym celem jest dostarczanie 
-                        w preferowanej przez Ciebie formie, wysokiej jakości specjalistycznych usług, w obszarach, które nie są głównym przedmiotem (‘core’) działalności Twojej firmy. </span>
-    
+        <div class="title-article">
+            <div class="title-small"><span>ROZWIĄZANIA I USŁUGI</span></div>
+            <div class="line"></div>
+        </div>
+        <div class="text-services-container">
+            <div class="text-article">
+                <div class="title-article">
+                    <div class="title-article-left">
+                        <span class="span-one">Myśląc poważnie o rozwoju swojej firmy, skalowaniu biznesu w oparciu o stabilne fundamenty, warto pomyśleć o partnerze, który będzie w stanie sprostać pojawiającym się szansom i wyzwaniom. Jako Grupa ECS staramy się budować partnerskie środowisko łącząc doświadczonych konsultantów, ambitnych freelancerów z Klientami, którzy chcą osiągać sukces w biznesie. </span>
+                        <br><br><br>
+                        <span class="span-two">Doskonale rozumiemy, że jako przedsiębiorca jesteś bardzo zajętą osobą. Naszym zadaniem jest powiedzieć co, jak i dlaczego zrobić? A następnie zadbać aby się to zadziało, zdejmując z Ciebie część ciężaru dostarczając knowhow i właściwych ludzi. Ty skoncentruj się na prowadzeniu biznesu, my zadbamy o resztę. </span>
+        
+                    </div>
                 </div>
+            </div>
+            <div class="col2">
                 <div class="title-article-right">
                     <p>Działamy zarówno wewnątrz firmy pomagając przy planowym poukładaniu elementów, jak i na zewnątrz w ramach usługi outsourcingu. 
                         Czy znajdziemy obszary do współpracy? Najprościej porozmawiać.</p>
@@ -115,6 +141,7 @@
                 </div>
             </div>
         </div>
+
     </div>
     <div class="image-services">
         <div class="item item-1" >

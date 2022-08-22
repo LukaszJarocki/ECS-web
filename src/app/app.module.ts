@@ -16,6 +16,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SpecializationsComponent } from './components/specializations/specializations.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NaszeDoswiadczenieSectionComponent,
     InspiracjeSectionComponent,
     KontaktSectionComponent,
-    FooterComponent
+    FooterComponent,
+    SpecializationsComponent
   ],
   imports: [
     BrowserModule,

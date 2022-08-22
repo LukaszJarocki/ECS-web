@@ -1,0 +1,79 @@
+<div class="article-one-row" 
+>
+    <div class="one-col"
+    *ngIf="images && images.length > 0">
+        <img *ngFor="let imageLink of images; let i=index" 
+            [src]="imageLink.src"  
+            [alt]=""
+            [ngClass]="{'image-active': selectedIndex === i}"
+            class="photos"
+    >
+
+
+
+
+    </div>
+    <div class="text-article">
+        <div *ngIf="indicators" class="carousel-title-container">
+            <span *ngFor="let title of images; let i=index" 
+          class="title"
+          [ngClass]="{'active': selectedIndex === i}"
+          (click)="selectImage(i)"
+          
+          ><h2 class="title-photo"
+          [ngClass]="{'active': selectedIndex === i}"
+          >{{title.name}}</h2></span>
+          </div>
+        <div class="title-article"
+        *ngFor="let imageButton of images; let i = index"
+        [ngClass]="{'active': selectedIndex === i}"
+        
+        >
+            <div class="title-small"
+            >
+            <span
+           >jkjkjkj</span></div>
+            <div class="line"></div>
+        </div>
+        <h2>Jak dotrzeć do nowych klientów? Jak wejść na nowe rynki? </h2>
+        <p>Od lat produkujecie wysokiej jakości automatykę dla ciężkiego przemysłu, dystrybuujecie najwyższej klasy linie produkcyjne, sprzedajecie specjalistyczne  urządzenia miernicze itp. Jesteście ekspertami w swojej dziedzinie, jednak czujecie, że obszar marketingu i sprzedaż można by podkręcić, macie w końcu niewykorzystany potencjał wzrostu. Efekty zaczynają się od niezobowiązującej rozmowy. Precyzyjne dotarcie do właściwego klienta, wejście na nowe rynki, poprawa czytelności oferty, wskazanie korzyści płynących ze współpracy z Wami i wiele więcej...</p>
+        
+        
+        
+        <ul>
+            <li >
+                <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                <p>Warsztaty komunikacyjne i marketingowe. Budowanie planów i strategii komunikacyjnych.</p>
+            </li>
+            <li >
+                <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                <p>Kompleksowe tworzenie nowoczenych i angażujących Twoich potencjalnych klientów stron WWW</p>
+            </li>
+            <li >
+                <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                <p>Projektowanie i obsługa kampanii digital marketingowych, skierowanych do właściwych odbiorców</p>
+            </li>
+            <li >
+                <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                <p>Nowoczesna i spójna prezentacja wizerunku firmy. Systematyzowanie i układanie czytelnej oferty</p>
+            </li>
+        </ul>
+
+    </div>
+    <div class="menu-article" >
+        <div class="menu"
+        ng-class="{'active-img':true}">
+            <div class="menu-title">
+                <span> Nasze specjalizacje</span>
+                <div class="subtitle">wybierz swoją branżę</div>
+            </div>
+            <div
+                *ngFor="let imageButton of images; let i = index" 
+                class="chooseLink">
+                <ul
+                [ngClass]="{'active-img': selectedIndex === 0}">
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
