@@ -2,7 +2,7 @@
   class="navbar"
   (scroll)="onscroll()"
   [ngClass]="navbarfixed ? 'fixed' : 'nav'">
-  <div class="container-nav">
+  <div class="container-nav" >
     <input type="checkbox" id="check" />
     <label for="check" class="checkbtn">
       <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
@@ -21,11 +21,11 @@
       <li class="experience"><a (click)="toDestination()" routerLink="/NaszeDoswiadczenieSectionComponent" routerLinkActive="active">Nasze doświadczenie</a></li>
       <li class="inspirations"><a (click)="toDestination()" routerLink="/InspiracjeSectionComponent" routerLinkActive="active">Inspiracje</a></li>
       <li class="contact"><a (click)="toDestination()" routerLink="/KontaktSectionComponent" routerLinkActive="active">Kontakt</a></li>
-      <li class="nav-icon"><button>
+      <li class="nav-icon" style="margin-right: 0;"><button>
         <img class="loupe-nav" src="../../../assets/icon/loupe.png" alt="">
       </button></li>
-      <li class="nav-button"><button>
-        <a href="#" class="button"><span>Umów konsultację</span></a>
+      <li class="nav-button" style=" margin: 0;"><button>
+        <a href="#" class="button" style="padding: 10px 20px;"><span>Umów konsultację</span></a>
       </button></li>
     </ul>
   </div>

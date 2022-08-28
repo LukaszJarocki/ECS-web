@@ -11,7 +11,7 @@ export class AppComponent {
   images: any = [
     {
       imageSrc:
-      '../../../assets/photos/Rectangle 57.png',
+      '../../../assets/photos/Klon zwyczajny - wysokość do 30 m 3.png',
       imageAlt:
       'nnnnn',
       titlePhoto:
@@ -142,6 +142,10 @@ export class AppComponent {
     }
   ]
 
-  
+  imageServices: any = [
+    {
+      servicesImg:'../../../assets/photos/warsztat.png'
+    }
+  ]
  
 }

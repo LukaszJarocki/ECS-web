@@ -1,0 +1,117 @@
+<section>
+    <div class="article-one-row" 
+    >
+        <div class="one-col">
+            <img class="photos" [src]="imageSrc" alt=""
+            >
+        </div>
+        <div class="text-article">
+            <div class="title-article"
+            >
+                <div class="title-small"
+                
+                >
+                <span   
+               >{{messageText}}</span></div>
+               <h2>Jak dotrzeć do zupełnie nowych klientów?  </h2>
+               <p>Nie ważne czy produkujecie nowoczesną automatykę, projektujecie linie produkcyjne czy sprzedajecie specjalistyczne urządzenia.  Każdego dnia zastanawiacie się jak dotrzeć do nowych klientów, wejść na nowe rynki bez konieczności obniżania cen. Dzisiaj przewagę zyskują te firmy, które zdecydowały się na rozwój nowoczesnych metod sprzedaży i marketingu. Odpowiednie połączenie eksperckiej, technicznej wiedzy z nowoczesnymi narzędziami i dobrze zaprojektowaną strategią komunikacyjną to podstawa.  
+                   <br><br>
+                   WYBRANE USŁUGI</p>
+            </div>
+            <ul>
+                <li >
+                    <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                    <p class="p-icon">
+                        Warsztaty komunikacyjne i marketingowe. Budowanie planów i strategii komunikacyjnych. Projektowanie procesów sprzedaży.
+                    </p>
+                </li>
+                <li >
+                    <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                    <p class="p-icon">
+                        Kompleksowe tworzenie nowoczenych i angażujących Twoich potencjalnych klientów stron WWW.     
+                    </p>
+                </li>
+                <li >
+                    <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                    <p class="p-icon">
+                        Projektowanie i obsługa kampanii digital marketingowych. Docieranie do precyzyjnie wyselekcjonowanych grup odbiorców - decydentów.
+                    </p>
+                </li>
+                <li >
+                    <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                    <p class="p-icon">
+                        Nowoczesna i spójna prezentacja wizerunku firmy. Systematyzowanie i układanie czytelnej oferty
+                    </p>
+                </li>
+            </ul>
+
+        </div>
+        <div class="menu-article" >
+            <div class="menu"
+            ng-class="{'active-img':true}">
+                <div class="menu-title">
+                    Wybierz interesującą specjalizację:
+                </div>
+                <div *ngIf="indicators" class="carousel-title-container">
+                    <span *ngFor="let title of ourSpecjaltiesPhotos; let i=index" 
+                  class="title"
+                  [ngClass]="{'active': selectedIndex === i}"
+                  (click)="selectImage(i)"
+                  
+                  ><h2 class="title-photo"
+                  [ngClass]="{'active': selectedIndex === i}"
+                  (click)="onClick(title)"
+                  >{{title.name}}</h2></span>
+                  </div>
+            </div>
+        </div>
+    </div> 
+
+
+    <div class="article-three-row">
+        <div class="text-article-three">
+            <div class="text-article">   
+                   <h2>Właściwi ludzie w gwarantują sukces!</h2>
+                   <p>
+                    Czy to prowadząc zakład produkcyjny, czy to świadcząc usługi dla przemysłu, czy wreszcie działając jako dystrybutor aparatury, aby rozwijać swoją działalność potrzebujesz pracowników, którzy skutecznie będą realizować zadania i cele. Niezależnie czy jest to kierownik działu, handlowiec, technolog, inżynier procesu czy serwisant, oprócz wiedzy technicznej muszą się wpasować w Twój zespół. W przeciwnym razie, możesz mieć problem z ciągłą rotacją i jej negatywnymi konsekwencjami. 
+                    Grupa ECS pomaga świadomie budować organizację, systematycznie wdrażać lub outsoursować procesy, które pomimo, że nie wiążą się z główną działalnością, mają strategiczny wpływ na rozwój każdej firmy. <br>
+                    Oferujemy:
+                   </p>
+            </div>
+            <ul>
+                    <li >
+                        <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                        <p class="p-icon">
+                            Pomoc w optymalizacji wewnętrznych działów HR klienta (projektujemy procesy i szkolenia pracowników HR, rekrutujemy specjalistów, wdrażamy narzędzia,)
+                        </p>
+                    </li>
+                    <li >
+                        <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                        <p class="p-icon">
+                            Szeroki wachlarz metod rekrutacyjnych prowadzonych w ramach outsourcingu (direct search, sourcing, marketing rekrutacyjny, socialmedia recruitment)     
+                        </p>
+                    </li>
+                    <li >
+                        <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                        <p class="p-icon">
+                            Możliwość pełnego outsourcingu działań związanych z obsługą w zakresie HR (z wyłączeniem obsługi kadrowo-płacowej)
+                        </p>
+                    </li>
+                    <li >
+                        <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                        <p class="p-icon">
+                            Przemyślaną i opartą na doświadczeniach strategię pozyskiwania, rozwoju i utrzymywania pracowników w organizacji
+                        </p>
+                    </li>
+                    <li >
+                        <img src="../../../assets/icon/Vector 3.png" alt="icon">
+                        <p class="p-icon">
+                            Działania towarzyszące, związane z budowaniem wizerunku pracodawcy (employer branding), badania satysfakcji pracowników i kandydatów
+                        </p>
+                    </li>
+            </ul>
+        </div>
+        <img src="../../../assets/photos/worker2.png" alt="">
+
+    </div>
+</section>

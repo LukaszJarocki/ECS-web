@@ -1,55 +1,15 @@
 <section>
-    <!--TITLE -->
-    <div class="title-row">
-        <div class="column-line-left"></div>
-        <div class="column-title">
-            <h3>współpracowaliśmy z</h3>
-        </div>
-        <div class="column-line-right"></div>
-    </div>
-    <!--BRANDS -->
-    <div class="brands-row">
-        <div class="brand">
-            <img class="logo" src="../../../assets/logo/Rectangle 62.png" alt="">
-        </div>
-        <div class="brand">
-            <img class="logo" src="../../../assets/logo/Rectangle 63.png" alt="">
-        </div>
-        <div class="brand">
-            <img class="logo" src="../../../assets/logo/Rectangle 64.png" alt="">
-        </div>
-        <div class="brand">
-            <img class="logo" src="../../../assets/logo/Rectangle 67.png" alt="">
-        </div>
-        <div class="brand">
-            <img class="logo" src="../../../assets/logo/Rectangle 62.png" alt="">
-        </div>
-        <div class="brand">
-            <img class="logo" src="../../../assets/logo/Rectangle 63.png" alt="">
-        </div>
-    </div>
+
+
     <!--ARTICLE -->
-    <div class="article-one-row" 
+<!--     <div class="article-one-row" 
     >
         <div class="one-col">
-            <img class="photos" [src]="imageSrc" alt=""
+            <img class="photos" src="../../../assets/photos/Boat.png" alt=""
             >
-  
         </div>
         <div class="text-article">
-            <div class="title-article"
-            >
-                <div class="title-small"
-                
-                >
-                <span   
-               >{{messageText}}</span></div>
-                <div class="line"></div>
-            </div>
-            <h2>Jak dotrzeć do nowych klientów? Jak wejść na nowe rynki? </h2>
-            <p>Od lat produkujecie wysokiej jakości automatykę dla ciężkiego przemysłu, dystrybuujecie najwyższej klasy linie produkcyjne, sprzedajecie specjalistyczne  urządzenia miernicze itp. Jesteście ekspertami w swojej dziedzinie, jednak czujecie, że obszar marketingu i sprzedaż można by podkręcić, macie w końcu niewykorzystany potencjał wzrostu. Efekty zaczynają się od niezobowiązującej rozmowy. Precyzyjne dotarcie do właściwego klienta, wejście na nowe rynki, poprawa czytelności oferty, wskazanie korzyści płynących ze współpracy z Wami i wiele więcej...</p>
-            
-            
+
             
             <ul>
                 <li >
@@ -69,30 +29,14 @@
                     <p>Nowoczesna i spójna prezentacja wizerunku firmy. Systematyzowanie i układanie czytelnej oferty</p>
                 </li>
             </ul>
+            <p>Od lat produkujecie wysokiej jakości automatykę dla ciężkiego przemysłu, dystrybuujecie najwyższej klasy linie produkcyjne, sprzedajecie specjalistyczne  urządzenia miernicze itp. Jesteście ekspertami w swojej dziedzinie, jednak czujecie, że obszar marketingu i sprzedaż można by podkręcić, macie w końcu niewykorzystany potencjał wzrostu. Efekty zaczynają się od niezobowiązującej rozmowy. Precyzyjne dotarcie do właściwego klienta, wejście na nowe rynki, poprawa czytelności oferty, wskazanie korzyści płynących ze współpracy z Wami i wiele więcej...</p>
+        </div>
 
-        </div>
-        <div class="menu-article" >
-            <div class="menu"
-            ng-class="{'active-img':true}">
-                <div class="menu-title">
-                    <span> Nasze specjalizacje</span>
-                    <div class="subtitle">wybierz swoją branżę</div>
-                </div>
-                <div *ngIf="indicators" class="carousel-title-container">
-                    <span *ngFor="let title of ourSpecjaltiesPhotos; let i=index" 
-                  class="title"
-                  [ngClass]="{'active': selectedIndex === i}"
-                  (click)="selectImage(i)"
-                  
-                  ><h2 class="title-photo"
-                  [ngClass]="{'active': selectedIndex === i}"
-                  (click)="onClick(title)"
-                  >{{title.name}}</h2></span>
-                  </div>
-            </div>
-        </div>
-    </div>
-    <div class="article-two-row">
+    </div> -->
+    <!--ARTICLE -->
+
+    <!--ARTICLE -->
+<!--     <div class="article-two-row">
         <div class="text-article-two">
             <h2>Właściwy człowiek na właściwym miejscu. </h2>
             <p>Rozwijasz swój biznes, pozyskujesz nowych klientów, nowe kontrakty , rozpoczynasz kolejne realizacje. Aby utrzymać oczekiwany przez klientów poziom jakościowy prac, potrzebujesz pozyskiwać właściwych ludzi, w szczególności inżynierów, specjalistów, doświadczoną w realizacji podobnych projektów kadrę kierowniczą. Jeżeli HR nie jest waszą domeną, warto zastanowić się nad skorzystaniem ze wsprawcia specjalistów, któryy mają na swoim koncie liczne projekty rekrutacyjne dla branży przemysłowej.</p>
@@ -115,6 +59,17 @@
         </div>
         <div class="img-col">
             <img src="../../../assets/photos/Rectangle 74.png" alt="">
+        </div>
+    </div> -->
+<!--     <div class="baner-section">
+        <div class="icon">
+                <img src="../../../assets/icon/phone-ringing.png" alt="" style="width:50px; height: 50px">
+        </div>
+        <div class="title-text">
+            <span>Umów konsultację</span>
+        </div>
+        <div class="button-consultacion">
+            <a href="#" class="button"><span>Umów konsultację</span></a>
         </div>
     </div>
     <div class="services">
@@ -142,14 +97,24 @@
             </div>
         </div>
 
-    </div>
-    <div class="image-services">
-        <div class="item item-1" >
+    </div> -->
+
+                                        <!-- CARDS SECTION -1 -->
+
+    <!-- <app-services-image-section></app-services-image-section> -->
+<!--     <div class="image-services" [ngClass]="[btnStyle]">
+        <div class="item item-1" (click)="submit()">
             <div class="inside-item">
-                <span class="item-slogan">Branding i rebranding marek
+                <span class="item-slogan" >Warsztaty i strategie biznesowe
                     <div class="line"></div>
                 </span>
                 <p class="p-class">Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami</p>
+                <button>
+                    <span>
+                        Czytaj więcej
+                    </span>    
+                        <img class="right-arrow-icon" src="../../../assets/icon/right-arrows.png" alt="" style="width:30px; height: 30px">
+                </button>
             </div>
         </div>
         <div class="item item-2">
@@ -159,6 +124,12 @@
                     <div class="line"></div>
                 </div>
                 <p class="p-class">Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami</p>
+                <button>
+                    <span>
+                        Czytaj więcej
+                    </span>    
+                        <img class="right-arrow-icon" src="../../../assets/icon/right-arrows.png" alt="" style="width:30px; height: 30px">
+                </button>
             </div>
         </div>
         <div class="item item-3">
@@ -167,6 +138,12 @@
                     <div class="line"></div>
                 </span>
                 <p class="p-class">Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami</p>
+                <button>
+                    <span>
+                        Czytaj więcej
+                    </span>    
+                        <img class="right-arrow-icon" src="../../../assets/icon/right-arrows.png" alt="" style="width:30px; height: 30px">
+                </button>
             </div>
         </div>
         <div class="item item-4">
@@ -175,53 +152,91 @@
                     <div class="line"></div>
                 </span>
                 <p class="p-class">Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami</p>
+                <button>
+                    <span>
+                        Czytaj więcej
+                    </span>    
+                        <img class="right-arrow-icon" src="../../../assets/icon/right-arrows.png" alt="" style="width:30px; height: 30px">
+                </button>
             </div>
         </div>
-        <div class="item item-5">
-            <div class="inside-item">
-                <span class="item-slogan">Warsztaty i strategie biznesowe
-                    <div class="line"></div>
-                </span>
-                <p class="p-class">Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami</p>
-            </div>
-        </div>
-        <div class="item item-6">
-            <div class="inside-item">
-                <span class="item-slogan">Tworzenie stron WWW dla firm
-                    <div class="line"></div>
-                </span>
-                <p class="p-class">Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami</p>
-            </div>
-        </div>
-        <div class="item item-7">
-            <div class="inside-item">
-                <span class="item-slogan">Oustourcing usług marketingowych [MBO]
-                    <div class="line"></div>
-                </span>
-                <p class="p-class">Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami</p>
-            </div>
-        </div>
-        <div class="item item-8">
-            <div class="inside-item">
-                <span class="item-slogan">Obsługa kampanii digital marketingu
-                    <div class="line"></div>
-                </span>
-                <p class="p-class">Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami</p>
-            </div>
-        </div>
-    </div>
-    <div class="baner-section">
-        <div class="icon">
-                <img src="../../../assets/icon/phone-ringing.png" alt="" style="width:50px; height: 50px">
-        </div>
-        <div class="title-text">
-            <span>Umów konsultację</span>
-        </div>
-        <div class="button-consultacion">
-            <a href="#" class="button"><span>Umów konsultację</span></a>
-        </div>
-    </div>
-    <div class="article-three-row">
+    </div>  -->
+
+                                        <!-- CARDS SECTION -2 -->
+
+                              <!--           <div class="image-services">
+                                            <div class="item item-1" >
+                                                <div class="inside-item">
+                                                    <span class="item-slogan">Branding i rebranding marek
+                                                        <div class="line"></div>
+                                                    </span>
+                                                    <p class="p-class">Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami</p>
+                                                </div>
+                                            </div>
+                                            <div class="item item-2">
+                                                <div class="inside-item">
+                                                    <div class="item-slogan">
+                                                        <span>Wdrażanie i optymalizacja procesów HR</span>
+                                                        <div class="line"></div>
+                                                    </div>
+                                                    <p class="p-class">Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami</p>
+                                                </div>
+                                            </div>
+                                            <div class="item item-3">
+                                                <div class="inside-item">
+                                                    <span class="item-slogan">Audyty i szkolenia
+                                                        <div class="line"></div>
+                                                    </span>
+                                                    <p class="p-class">Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami</p>
+                                                </div>
+                                            </div>
+                                            <div class="item item-4">
+                                                <div class="inside-item">
+                                                    <span class="item-slogan">Outsourcing procesów rekrutacyjnych [RPO]
+                                                        <div class="line"></div>
+                                                    </span>
+                                                    <p class="p-class">Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami</p>
+                                                </div>
+                                            </div>
+                                            <div class="item item-5">
+                                                <div class="inside-item">
+                                                    <span class="item-slogan">Warsztaty i strategie biznesowe
+                                                        <div class="line"></div>
+                                                    </span>
+                                                    <p class="p-class">Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami</p>
+                                                </div>
+                                            </div>
+                                            <div class="item item-6">
+                                                <div class="inside-item">
+                                                    <span class="item-slogan">Tworzenie stron WWW dla firm
+                                                        <div class="line"></div>
+                                                    </span>
+                                                    <p class="p-class">Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami</p>
+                                                </div>
+                                            </div>
+                                            <div class="item item-7">
+                                                <div class="inside-item">
+                                                    <span class="item-slogan">Oustourcing usług marketingowych [MBO]
+                                                        <div class="line"></div>
+                                                    </span>
+                                                    <p class="p-class">Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami</p>
+                                                </div>
+                                            </div>
+                                            <div class="item item-8">
+                                                <div class="inside-item">
+                                                    <span class="item-slogan">Obsługa kampanii digital marketingu
+                                                        <div class="line"></div>
+                                                    </span>
+                                                    <p class="p-class">Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami</p>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+
+
+
+
+<!--     <div class="article-three-row">
         <div class="text-article-three">
             <div class="title-article">
                 <div class="title-small"><span>NASI KLIENCI</span></div>
@@ -241,7 +256,7 @@
         </div>
         <img src="../../../assets/photos/pracownik.png" alt="">
         <div class="blue-box">1212</div>
-    </div>
+    </div> -->
     <div class="customer-feedback">
         <div class="title-customer-feedback">CO MÓWIĄ O NAS KLIENCI?</div>
         <div class="slogan-customer-feedback">Opinie klientów </div>
@@ -303,16 +318,14 @@
         </div>
     </div>
     <div class="article-three-row">
-        <img src="../../../assets/photos/pracownik.png" alt="">
+        <img src="../../../assets/photos/lighthouse.png" alt="">
         <div class="text-article-three">
             <div class="title-article">
                 <div class="title-small"><span>NASZA FILOZOFIA </span></div>
                 <div class="line"></div>
             </div>
-            <h2>Chcemy dokładać małą cegiełkę 
-                do rozwoju polskich firm, dzieląc się 
-                z nimi know how naszych konsultantów i partnerów tak aby stawali się coraz bardziej konkurencyjni na rynku. </h2>
-            <p>Stawiamy na długofalowe relacje, wzajemne zaufanie, szacunek i otwartą komunikację. Chcemy stawać się Partnerami przez duże “P”. Częścią zespołu, przewodnikiem, 12 graczem który asystuje, pomaga przewidzieć szanse i zagrożenia. Dostarcza inspiracji i potrafi spojrzeć obiektywnie na to czego nie widać z wewnątrz. A to wszystko po to aby nasi Klienci mogli jeszcze skuteczniej realizować swoje cele.  </p>
+            <h2>Każdego dnia chcemy dokładać małą cegiełkę do rozwoju polskich firm, dzieląc się z nimi knowhow naszych konsultantów i partnerów. Twój sukces to nasz sukces. Dlatego też zawsze działamy na 120%.</h2>
+            <p>Stawiamy na długofalowe relacje, wzajemne zaufanie, szacunek i otwartą komunikację. Chcemy stawać się Partnerami przez duże “P”. Częścią zespołu, przewodnikiem, 12 graczem który asystuje, pomaga przewidzieć szanse i zagrożenia. Dostarcza inspiracji i potrafi spojrzeć obiektywnie na to czego nie widać z wewnątrz. A to wszystko po to aby nasi Klienci mogli jeszcze skuteczniej realizować swoje biznesowe cele.  </p>
             <button>
                 <span>
                     Czytaj więcej
@@ -322,33 +335,36 @@
 
         </div>
     </div>
-    <div class="title-row">
-        <div class="column-line-left-down"></div>
-        <div class="column-title">
-            <h3>KORZYSTAMY Z NOWOCZESNYCH TECHNOLOGII</h3>
+
+        <!--TITLE -->
+        <div class="title-row">
+            <div class="column-line-left"></div>
+            <div class="column-title">
+                <h3>klienci i partnerzy</h3>
+            </div>
+            <div class="column-line-right"></div>
         </div>
-        <div class="column-line-right-down"></div>
-    </div>
-    <div class="brands-row">
-        <div class="brand">
-            <img class="logo" src="../../../assets/logo/ecs_logo_color (2).png" alt="">
+        <!--BRANDS -->
+        <div class="brands-row">
+            <div class="brand">
+                <img class="logo" src="../../../assets/logo/Rectangle 62.png" alt="">
+            </div>
+            <div class="brand">
+                <img class="logo" src="../../../assets/logo/Rectangle 63.png" alt="">
+            </div>
+            <div class="brand">
+                <img class="logo" src="../../../assets/logo/Rectangle 64.png" alt="">
+            </div>
+            <div class="brand">
+                <img class="logo" src="../../../assets/logo/Rectangle 67.png" alt="">
+            </div>
+            <div class="brand">
+                <img class="logo" src="../../../assets/logo/Rectangle 62.png" alt="">
+            </div>
+            <div class="brand">
+                <img class="logo" src="../../../assets/logo/Rectangle 63.png" alt="">
+            </div>
         </div>
-        <div class="brand">
-            <img class="logo" src="../../../assets/logo/ecs_logo_color (2).png" alt="">
-        </div>
-        <div class="brand">
-            <img class="logo" src="../../../assets/logo/ecs_logo_color (2).png" alt="">
-        </div>
-        <div class="brand">
-            <img class="logo" src="../../../assets/logo/ecs_logo_color (2).png" alt="">
-        </div>
-        <div class="brand">
-            <img class="logo" src="../../../assets/logo/ecs_logo_color (2).png" alt="">
-        </div>
-        <div class="brand">
-            <img class="logo" src="../../../assets/logo/ecs_logo_color (2).png" alt="">
-        </div>
-    </div>
 </section>
 
 

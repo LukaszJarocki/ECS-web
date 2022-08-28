@@ -1,25 +1,24 @@
+import { Component, Input, OnInit } from '@angular/core';
 import { servicesImg } from './../shared/service-image';
-import { Component, Input, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-wspolprace-section',
-  templateUrl: './wspolprace-section.component.html',
-  styleUrls: ['./wspolprace-section.component.scss']
+  selector: 'app-second-section-of-title-page',
+  templateUrl: './second-section-of-title-page.component.html',
+  styleUrls: ['./second-section-of-title-page.component.scss']
 })
-export class WspolpraceSectionComponent implements OnInit {
+export class SecondSectionOfTitlePageComponent implements OnInit {
 
-  @Input() indicators = true;
   @Input() images: servicesImg[] = []
-  
-  btnStyle = 'btn-default';
-  
+  @Input() indicators = true;
+
   selectedIndex = 0;
   imageSrc = '';
   messageText = '';
+  constructor() { }
 
   ourSpecjaltiesPhotos: any = [
     {
-      src: '../../../assets/photos/rafiner.png',
+      src: '../../../assets/photos/workers.png',
       name: 'Przemysł i produkcja'
     },
     {
@@ -33,21 +32,12 @@ export class WspolpraceSectionComponent implements OnInit {
     {
       src: '../../../assets/photos/rafiner.png',
       name: 'Legal i Finanse'
-    },
-    {
-      src: '../../../assets/photos/Rectangle 74.png',
-      name: 'Nieruchomości'
     }
   ]
 
-  isHidden = false;
-  constructor() { 
-  }
-  
 
   ngOnInit(): void {
   }
-
   selectImage(index: number): void{
     this.selectedIndex = index;
   }
@@ -56,13 +46,4 @@ export class WspolpraceSectionComponent implements OnInit {
     this.imageSrc = imageNameObject.src;
     this.messageText = imageNameObject.name;
   }
-
-  submit() {
-    if(this.btnStyle == 'image-services') {
-      this.btnStyle = 'image-services-first-photo';
-    } else {
-      this.btnStyle = 'image-services';
-    }
-  }
-
 }

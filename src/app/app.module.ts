@@ -17,6 +17,11 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SpecializationsComponent } from './components/specializations/specializations.component';
+import { ServicesImageSectionComponent } from './components/services-image-section/services-image-section.component';
+import { FirstSectionOfTitlePageComponent } from './components/first-section-of-title-page/first-section-of-title-page.component';
+import { SecondSectionOfTitlePageComponent } from './components/second-section-of-title-page/second-section-of-title-page.component';
+import { ThirdSectionOfTitlePageComponent } from './components/third-section-of-title-page/third-section-of-title-page.component';
+import { FifthSectionOfTitlePageComponent } from './components/fifth-section-of-title-page/fifth-section-of-title-page.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +36,12 @@ import { SpecializationsComponent } from './components/specializations/specializ
     InspiracjeSectionComponent,
     KontaktSectionComponent,
     FooterComponent,
-    SpecializationsComponent
+    SpecializationsComponent,
+    ServicesImageSectionComponent,
+    FirstSectionOfTitlePageComponent,
+    SecondSectionOfTitlePageComponent,
+    ThirdSectionOfTitlePageComponent,
+    FifthSectionOfTitlePageComponent
   ],
   imports: [
     BrowserModule,
