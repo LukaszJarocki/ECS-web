@@ -3,19 +3,19 @@
     justify-content: space-between;
     height: 100px;
     padding: 0 30%;
-    background: rgb(253,7,38);
-    background: linear-gradient(158deg, rgba(253,7,38,1) 55%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(89.94deg, #F20208 0.05%, #FC7467 100.91%);
     .icon{
         align-self: center;
-        #phone-icon{
-            fill: white;
-        }
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: 50%;
+
     }
     .title-text{
         align-self: center;
         span{
             font-weight: 700;
-            font-size: 26px;
+            font-size: 30px;
             line-height: 46px;
             color: #FFFFFF;
         }

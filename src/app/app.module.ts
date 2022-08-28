@@ -22,6 +22,7 @@ import { FirstSectionOfTitlePageComponent } from './components/first-section-of-
 import { SecondSectionOfTitlePageComponent } from './components/second-section-of-title-page/second-section-of-title-page.component';
 import { ThirdSectionOfTitlePageComponent } from './components/third-section-of-title-page/third-section-of-title-page.component';
 import { FifthSectionOfTitlePageComponent } from './components/fifth-section-of-title-page/fifth-section-of-title-page.component';
+import { ServicesImageTwoComponent } from './components/services-image-two/services-image-two.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { FifthSectionOfTitlePageComponent } from './components/fifth-section-of-
     FirstSectionOfTitlePageComponent,
     SecondSectionOfTitlePageComponent,
     ThirdSectionOfTitlePageComponent,
-    FifthSectionOfTitlePageComponent
+    FifthSectionOfTitlePageComponent,
+    ServicesImageTwoComponent
   ],
   imports: [
     BrowserModule,

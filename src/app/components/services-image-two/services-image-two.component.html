@@ -1,0 +1,37 @@
+<div *ngIf="imagesServTwo && imagesServTwo.length > 0" class="carousel-container" >
+    <img 
+    *ngFor="let imageS of imagesServTwo; let i=index" 
+    [src]="imageS.imageServ"  
+    [ngClass]="{'image-active': selectedIndex === i}"
+    
+    >
+
+
+    
+   
+
+    
+    <div class="services-container"
+    *ngIf="indicators"
+    >
+        <div class="item item-1" 
+        *ngFor="let title of imagesServTwo; let i=index"  
+    [ngClass]="{'image-active': selectedIndex === i}"
+        (mouseover)="selectImage(i)"
+        >
+            <div class="inside-item">
+                <span class="item-slogan" >{{title.titleServ}}
+                    <div class="line"></div>
+                </span>
+                <p class="p-class">{{title.textServ}}</p>
+                <button>
+                    <span>
+                        Czytaj więcej
+                    </span>    
+                        <img class="right-arrow-icon" src="../../../assets/icon/right-arrows.png" alt="" style="width:30px; height: 30px">
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</div>

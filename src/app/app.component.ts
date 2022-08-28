@@ -147,12 +147,14 @@ export class AppComponent {
     {
       imageServ:'../../../assets/photos/Rectangle 83 (1).png',
       titleServ:'Warsztaty i strategie biznesowe',
-      textServ:'Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami'
+      textServ:'Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami',
+      imageIcon:'../../../assets/icon/right-arrows.png'
     },
     {
       imageServ:'../../../assets/photos/Rectangle 83.png',
       titleServ:'Wdrażanie i optymalizacja procesów HR',
-      textServ:'Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami'
+      textServ:'Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami',
+      imageIcon:'../../../assets/icon/right-arrows.png'
     },
     {
       imageServ:'../../../assets/photos/Rectangle 83 (1).png',
@@ -166,7 +168,7 @@ export class AppComponent {
     },
     
   ]
-  imagesServSecond: any = [
+  imagesServTwo: any = [
 
     {
       imageServ:'../../../assets/photos/Rectangle 83 (1).png',
