@@ -142,10 +142,53 @@ export class AppComponent {
     }
   ]
 
-  imageServices: any = [
+  imagesServ: any = [
+
     {
-      servicesImg:'../../../assets/photos/warsztat.png'
-    }
+      imageServ:'../../../assets/photos/Rectangle 83 (1).png',
+      titleServ:'Warsztaty i strategie biznesowe',
+      textServ:'Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami'
+    },
+    {
+      imageServ:'../../../assets/photos/Rectangle 83.png',
+      titleServ:'Wdrażanie i optymalizacja procesów HR',
+      textServ:'Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami'
+    },
+    {
+      imageServ:'../../../assets/photos/Rectangle 83 (1).png',
+      titleServ:'Audyty i szkolenia',
+      textServ:'Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami'
+    },
+    {
+      imageServ:'../../../assets/photos/Rectangle 83.png',
+      titleServ:'Outsourcing procesów rekrutacyjnych [RPO]',
+      textServ:'Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami'
+    },
+    
+  ]
+  imagesServSecond: any = [
+
+    {
+      imageServ:'../../../assets/photos/Rectangle 83 (1).png',
+      titleServ:'Warsztaty i strategie biznesowe',
+      textServ:'Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami'
+    },
+    {
+      imageServ:'../../../assets/photos/Rectangle 83.png',
+      titleServ:'Wdrażanie i optymalizacja procesów HR',
+      textServ:'Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami'
+    },
+    {
+      imageServ:'../../../assets/photos/Rectangle 83 (1).png',
+      titleServ:'Audyty i szkolenia',
+      textServ:'Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami'
+    },
+    {
+      imageServ:'../../../assets/photos/Rectangle 83.png',
+      titleServ:'Outsourcing procesów rekrutacyjnych [RPO]',
+      textServ:'Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami'
+    },
+    
   ]
  
 }

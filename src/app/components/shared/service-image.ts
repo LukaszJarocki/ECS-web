@@ -1,4 +1,5 @@
 export interface servicesImg {
-    servicesImg: string;
-
+    imageServ: string;
+    titleServ: string;
+    textServ: string
 }

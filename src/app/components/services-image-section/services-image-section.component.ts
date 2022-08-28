@@ -8,12 +8,24 @@ import { servicesImg } from './../shared/service-image';
 })
 export class ServicesImageSectionComponent implements OnInit {
 
-  @Input() images: servicesImg[] = []
+  @Input() imagesServ: servicesImg [] = []
+  @Input() indicators = true;
 
+
+  selectedIndex = 0;
 
   constructor() { }
 
   ngOnInit(): void {
+
   }
+
+
+
+  
+  selectImage(index: number): void{
+    this.selectedIndex = index;
+  }
+
 
 }
