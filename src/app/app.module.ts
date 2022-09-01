@@ -23,6 +23,7 @@ import { SecondSectionOfTitlePageComponent } from './components/second-section-o
 import { ThirdSectionOfTitlePageComponent } from './components/third-section-of-title-page/third-section-of-title-page.component';
 import { FifthSectionOfTitlePageComponent } from './components/fifth-section-of-title-page/fifth-section-of-title-page.component';
 import { ServicesImageTwoComponent } from './components/services-image-two/services-image-two.component';
+import { CustomerFeedbackComponent } from './components/customer-feedback/customer-feedback.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { ServicesImageTwoComponent } from './components/services-image-two/servi
     SecondSectionOfTitlePageComponent,
     ThirdSectionOfTitlePageComponent,
     FifthSectionOfTitlePageComponent,
-    ServicesImageTwoComponent
+    ServicesImageTwoComponent,
+    CustomerFeedbackComponent
   ],
   imports: [
     BrowserModule,

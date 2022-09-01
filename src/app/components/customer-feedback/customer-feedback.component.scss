@@ -1,0 +1,57 @@
+.customer-slider-feedback{
+    display: flex;
+    padding: 0 20%;
+    background: #001E47;
+
+    .quote-data{
+        width: 30%;
+    }
+    .quote-info{
+        margin-top: 10px;
+        color: #fff;
+        .name{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 0px;
+            margin-bottom: 10px;
+        }
+        .position{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 30px;
+        }
+        .icon-next{
+            text-align: left;
+            margin-top: 15px;
+            .prev{
+                border: 2px solid #FB8484;
+                border-radius: 50%;
+                padding: 5px;  
+                margin: 10px;
+                margin-left: 0;
+            }
+            .next{
+                border: 2px solid #FB8484;
+                border-radius: 50%;
+                padding: 5px; 
+            }
+        }
+    }
+    .quote-text{
+        width: 70%;
+        p{  
+            margin-top: 40px;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 50px;
+            color: #FFFFFF;
+        }
+
+    }
+}
+
+.image-active{
+    display: block;
+    width: 100%;
+    height: 100vh;
+  }

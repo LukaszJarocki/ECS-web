@@ -217,3 +217,153 @@ h2.title-photo.active{
     opacity: 1;
   }
 }
+
+@media   (max-width: 600px){
+  .carousel-container{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  
+    img{
+      display: none;
+    }
+  
+  
+    .image-active{
+      display: block;
+      width: 100%;
+      height: 300px;
+    }
+  
+  
+  }
+  
+  
+  
+  .fade{
+    animation-name: fade;
+    animation-duration: 6.5s;
+  
+  }
+  
+  @keyframes fade {
+    from{
+      opacity: 0.4;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  
+  .btn-carousel{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    border:0;
+    cursor: pointer;
+  }
+  
+  .btn-prev{
+    left: 0;
+  }
+  .btn-next{
+    right: 0;
+  }
+  
+  svg{
+    color: #fff;
+    opacity: 0.5;
+    transition: all 0.15s ease;
+  }
+  
+  svg:hover{
+    opacity: 0.9;
+  }
+  svg:active{
+    color: #fff;
+    opacity: 0.5;
+  }
+    
+  
+    /////////
+    /// 
+    .carousel-title-container{
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      height: 30px;
+  
+  
+    } 
+    .title{
+      margin: 0;
+      padding: 0;
+      height: 30px;
+      font-size: 6px;
+      font-weight: 400;
+      border-top: 1px solid hsla(0,0%,96.1%,.2);
+      border-right: 1px solid hsla(0,0%,96.1%,.2);
+      opacity: 0.3;
+      width: fit-content;
+    }
+    
+  
+  span.title{
+    height: 30px;
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    display: inline-block;
+    transition: opacity 0.6s ease;
+    opacity: 1;
+  }
+  
+  span.title.active{
+    height: 30px;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  
+  h2.title-photo{
+    margin: 0;
+    padding-top: 2%;
+    font-size: 6px;
+    font-weight: 400;
+    font-family: "Overpass", sans-serif;
+    color: white;
+  }
+  
+  h2.title-photo.active{
+    margin: 0 20%;
+    color: black;
+    border-bottom: 3px solid #000;
+    align-items: center;
+    font-size: 6px;
+    font-weight: 400;
+    font-family: "Overpass", sans-serif;
+    
+  }
+  
+  ////////////////////////////
+  
+  .slider-section-info{
+   display: none;
+
+  }
+  
+
+}

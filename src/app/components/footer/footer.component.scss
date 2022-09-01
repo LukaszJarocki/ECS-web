@@ -14,22 +14,23 @@ footer{
 
             .logo{
                 width: 130px;
+                margin-bottom: 20px;
             }
             .social-icons{
                 display: flex;
-               img{
-                align-items:flex-end;
-                justify-content: center;
+                .logo-sm{
+                justify-content: space-between;
                 padding: 10px;
                 width: 40px;
                 height: 40px;
                } 
             }
             .right-col-text{
-                .footer-button{
+
                     
                     button{
                         display: flex;
+                        width: 100%;
                         background-color: #001E47;  
                         border: none;            
                   
@@ -42,7 +43,7 @@ footer{
                             margin: 20px auto;
                             max-width: 250px;
                             text-decoration: none;
-                            padding: 15px 20px;
+                            padding: 15px 38px;
                           }
                           
                           a.button {
@@ -63,27 +64,29 @@ footer{
                                 color: #FD0726;
                             }
                           }
-                    }
+                    
                           }
-                .checkbox-input{
-                    display: flex;
-                    padding: 5px;
+
+                    
                     input{
-                        width: 10%;
+                        width: 100%;
+                        padding: 5px;
                         align-self: flex-start;
                     } 
-                    label{
-                        width: 90%;
-                        align-self: flex-start;
-                        font-weight: 400;
-                        font-size: 10px;
-                        line-height: 20px;
-                        color: #6687B5;
+                    .checkbox-input{
+                        display: flex;
+                        input{
+                            width: 10%;
+                        }
+                        label{
+                            padding-left: 5px;
+                        }
                     }
-                }
+                
             }
             .title{
                 border-left: 3px solid#FD0726;
+
                 h4{
                     margin: 0;
                     padding: 0;
@@ -99,6 +102,20 @@ footer{
                     color: white;
                     font-weight: 400;
                     font-size: 18px;
+                }
+            }
+
+            .text-footer{
+                ul{
+                    margin: 20px 0;
+                    padding: 0;
+                    list-style-type: none;
+                    li{
+                        text-align: left;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 30px;
+                    }
                 }
             }
         }

@@ -157,12 +157,12 @@ export class AppComponent {
       imageIcon:'../../../assets/icon/right-arrows.png'
     },
     {
-      imageServ:'../../../assets/photos/Rectangle 83 (1).png',
+      imageServ:'../../../assets/photos/Klon zwyczajny - wysokość do 30 m 3.png',
       titleServ:'Audyty i szkolenia',
       textServ:'Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami'
     },
     {
-      imageServ:'../../../assets/photos/Rectangle 83.png',
+      imageServ:'../../../assets/photos/one.png',
       titleServ:'Outsourcing procesów rekrutacyjnych [RPO]',
       textServ:'Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami'
     },
@@ -171,26 +171,45 @@ export class AppComponent {
   imagesServTwo: any = [
 
     {
-      imageServ:'../../../assets/photos/Rectangle 83 (1).png',
+      imageServ:'../../../assets/photos/two.png',
       titleServ:'Warsztaty i strategie biznesowe',
       textServ:'Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami'
     },
     {
-      imageServ:'../../../assets/photos/Rectangle 83.png',
+      imageServ:'../../../assets/photos/three.png',
       titleServ:'Wdrażanie i optymalizacja procesów HR',
       textServ:'Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami'
     },
     {
-      imageServ:'../../../assets/photos/Rectangle 83 (1).png',
+      imageServ:'../../../assets/photos/four.png',
       titleServ:'Audyty i szkolenia',
       textServ:'Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami'
     },
     {
-      imageServ:'../../../assets/photos/Rectangle 83.png',
+      imageServ:'../../../assets/photos/homepage_ecs_slajder_strategia.png',
       titleServ:'Outsourcing procesów rekrutacyjnych [RPO]',
       textServ:'Wspólnie z Tobą, wykorzystując własne doświadczenia biznesowe, zastanowimy się nad tym jak najlepiej poukładać procesy, jak komunikować się z klientami a jak z potencjalnymi pracownikami'
     },
     
   ]
+
+  customerFeedbackInfo: any =[
+    {
+    nameCustomer:'Grzegorz',
+    jobCustomer:'Co-founder, CTO, Branża IT',
+    customerFeedback:'“Dla nas najważniejszy był fakt że z dużą uwagą słuchali i dobrze zrozumieli niuanse naszego biznesu. Niewątpliwie godna podkreślenia jest również sprawność koordynowania projektu”',
+  },
+    {
+    nameCustomer:'Adam',
+    jobCustomer:'Co-founder, CTO, Branża IT',
+    customerFeedback:'“Dla nas najważniejszy był fakt że z dużą uwagą słuchali i dobrze zrozumieli niuanse naszego biznesu. Niewątpliwie godna podkreślenia jest również sprawność koordynowania projektu”',
+  },
+    {
+    nameCustomer:'Julia',
+    jobCustomer:'Co-founder, CTO, Branża IT',
+    customerFeedback:'“Dla nas najważniejszy był fakt że z dużą uwagą słuchali i dobrze zrozumieli niuanse naszego biznesu. Niewątpliwie godna podkreślenia jest również sprawność koordynowania projektu”',
+  },
+  
+]
  
 }

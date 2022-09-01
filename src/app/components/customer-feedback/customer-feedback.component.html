@@ -1,0 +1,31 @@
+<div class="customer-slider-feedback">
+    <div class="quote-data" >
+        <div class="quote-icon">
+            <img src="../../../assets/icon/quote.png" alt="">
+        </div>
+        <div class="quote-info">
+            <div *ngFor="let data of images; let i = index"
+            [ngClass]="{'image-active': selectedIndex === i}">
+                <div class="name" style="font-size: 55px" >
+                </div>
+                <div class="position">
+                    Co-founder, CTO, Branża IT
+                </div>
+            </div>
+            <div class="icon-next">
+                <button class="prev" (click)="onPrevClick()">
+                    <img src="../../../assets/icon/right-arrows.png" alt="" style="transform:rotate(180deg); width:20px; height: 20px">
+                </button>
+                <button class="next" (click)="onNextClick()">
+                    <img src="../../../assets/icon/right-arrows.png" alt="" style="width:20px; height: 20px">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="quote-text">
+        <p>
+            “Dla nas najważniejszy był fakt że  z dużą uwagą słuchali i dobrze zrozumieli niuanse naszego biznesu. Niewątpliwie godna podkreślenia jest również sprawność koordynowania projektu”
+        </p>
+    </div>
+</div>
+

@@ -46,7 +46,13 @@
                     .line{
                         margin-top: 20px;
                         width: 50%;
-                        border-bottom: 3px solid #FD0726;
+                        border-bottom: 3px solid white;
+                        transition: all 0.6s ease;
+                    }
+                    .line-back{
+                        margin-top: 0px;
+                        width: 100%;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
                         transition: all 0.6s ease;
                     }
                 }
@@ -133,30 +139,15 @@
     
         .item-1{
             border-right: 1px solid #FFFFFF;
-            border-bottom: 1px solid #FFFFFF;
         }
         .item-2{
             border-right: 1px solid #FFFFFF;
-            border-bottom: 1px solid #FFFFFF;
         }
         .item-3{
             border-right: 1px solid #FFFFFF;
-            border-bottom: 1px solid #FFFFFF;
         }
         .item-4{
             border-bottom: 1px solid #FFFFFF;
-        }
-        .item-5{
-            border-right: 1px solid #FFFFFF;
-        }
-        .item-6{
-            border-right: 1px solid #FFFFFF;
-        }
-        .item-7{
-            border-right: 1px solid #FFFFFF;
-        }
-        .item-8{
-            border-right: 1px solid #FFFFFF;
         }
     }
   }
@@ -166,22 +157,87 @@
     .blue-col{
         width: 75%;
         background: #0E3357;
+        padding: 80px 150px;
         .title-article{
-            padding: 80px 150px;
-            h2{
-                font-family: 'Overpass';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 60px;
-                line-height: 76px;
+            border-left: 3px solid #FD0726;
+            padding: 0 30px;
+            .info{
+                display: flex;
+                height: 100%;
+                img{
+                    align-self: center;
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 15px;
+                }
+                h2{
+                    align-self: center;
+                    margin: 0;
+                    font-weight: 700;
+                    font-size: 42px;
+                    font-family: "Overpass", sans-serif;
+                }
             }
             p{
+                margin-top: 15px;
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 20px;
                 line-height: 30px;
+                span{
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: bold;
+                }
             }
         }
     }
 
   }
   
+  @media   (max-width: 600px){
+    .empty-container-left{
+        display: block;
+        margin-top: 0px;
+        justify-content: flex-end;
+        height: 100%;
+        .blue-col{
+            margin: 0;
+            padding: 40px 20px;
+            width: 100%;
+            background: #0E3357;
+            .title-article{
+                border-left: 3px solid #FD0726;
+                padding: 0 30px;
+                .info{
+                    display: flex;
+                    height: 100%;
+                    img{
+                        align-self: center;
+                        width: 50px;
+                        height: 50px;
+                        margin-right: 15px;
+                    }
+                    h2{
+                        align-self: center;
+                        margin: 0;
+                        font-weight: 700;
+                        font-size: 42px;
+                        font-family: "Overpass", sans-serif;
+                    }
+                }
+                p{
+                    margin-top: 15px;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 30px;
+                    span{
+                        font-size: 20px;
+                        line-height: 30px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    
+      }
+}

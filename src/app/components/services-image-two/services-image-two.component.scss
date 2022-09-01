@@ -48,6 +48,12 @@
                         border-bottom: 3px solid #FD0726;
                         transition: all 0.6s ease;
                     }
+                    .line-back{
+                        margin-top: 0px;
+                        width: 100%;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                        transition: all 0.6s ease;
+                    }
                 }
     
                 .p-class{
@@ -96,7 +102,7 @@
                     color: #FFFFFF;            
                     .line{
                         width: 50%;
-                        border-bottom: 3px solid #FD0726;
+                        border-bottom: 3px solid white;
                         transition: all 0.6s ease;
                     }
                     
@@ -132,30 +138,15 @@
     
         .item-1{
             border-right: 1px solid #FFFFFF;
-            border-bottom: 1px solid #FFFFFF;
         }
         .item-2{
             border-right: 1px solid #FFFFFF;
-            border-bottom: 1px solid #FFFFFF;
         }
         .item-3{
             border-right: 1px solid #FFFFFF;
-            border-bottom: 1px solid #FFFFFF;
         }
         .item-4{
             border-bottom: 1px solid #FFFFFF;
-        }
-        .item-5{
-            border-right: 1px solid #FFFFFF;
-        }
-        .item-6{
-            border-right: 1px solid #FFFFFF;
-        }
-        .item-7{
-            border-right: 1px solid #FFFFFF;
-        }
-        .item-8{
-            border-right: 1px solid #FFFFFF;
         }
     }
   }
