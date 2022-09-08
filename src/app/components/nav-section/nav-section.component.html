@@ -2,31 +2,33 @@
   class="navbar"
   (scroll)="onscroll()"
   [ngClass]="navbarfixed ? 'fixed' : 'nav'">
-  <div class="container-nav" >
+  <div  class="navbar__container"  >
     <input type="checkbox" id="check" />
-    <label for="check" class="checkbtn">
+    <label for="check" class="navbar__checkbtn">
       <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
       </svg>
     </label>
     <!-----------------------------------LOGO------------------------------->
-    <a href="" class="navbar-brand"
-      ><img class="logo" src="../../../assets/logo/ecs_logo_transparent (1).png" alt=""></a
+    <a href="" class="navbar__brand"
+      ><img class="navbar__logo" src="../../../assets/logo/ecs_logo_transparent (1).png" alt=""></a
     >
     <!-----------------------------------MENU LIST------------------------------->
-    <ul class="ul-list">
-      <li class="consulting"><a (click)="toHome()" routerLink="/DoradztwoIKonsultingSectionComponent"   routerLinkActive="active">Doradztwo i konsulting</a></li>
-      <li class="outsourcing"><a (click)="toAbout()" routerLink="/OutsourcingProcesowSectionComponent" routerLinkActive="active">Outsourcing procesów</a></li>
-      <li class="collaboration"><a (click)="toOffer()" routerLink="/WspolpraceSectionComponent" routerLinkActive="active">Współprace</a></li>
-      <li class="experience"><a (click)="toDestination()" routerLink="/NaszeDoswiadczenieSectionComponent" routerLinkActive="active">Nasze doświadczenie</a></li>
-      <li class="inspirations"><a (click)="toDestination()" routerLink="/InspiracjeSectionComponent" routerLinkActive="active">Inspiracje</a></li>
-      <li class="contact"><a (click)="toDestination()" routerLink="/KontaktSectionComponent" routerLinkActive="active">Kontakt</a></li>
-      <li class="nav-icon" style="margin-right: 0;"><button>
-        <img class="loupe-nav" src="../../../assets/icon/loupe.png" alt="">
+    <ul class="navbar__ul-list">
+      <li class="navbar__li-list"><a class="navbar__li-link" (click)="toHome()" routerLink="/DoradztwoIKonsultingSectionComponent"   routerLinkActive="active">Doradztwo i konsulting</a></li>
+      <li class="navbar__li-list"><a class="navbar__li-link" (click)="toAbout()" routerLink="/OutsourcingProcesowSectionComponent" routerLinkActive="active">Outsourcing procesów</a></li>
+      <li class="navbar__li-list"><a class="navbar__li-link" (click)="toOffer()" routerLink="/WspolpraceSectionComponent" routerLinkActive="active">Współprace</a></li>
+      <li class="navbar__li-list"><a class="navbar__li-link" (click)="toDestination()" routerLink="/NaszeDoswiadczenieSectionComponent" routerLinkActive="active">Nasze doświadczenie</a></li>
+      <li class="navbar__li-list"><a class="navbar__li-link" (click)="toDestination()" routerLink="/InspiracjeSectionComponent" routerLinkActive="active">Inspiracje</a></li>
+      <li class="navbar__li-list"><a class="navbar__li-link" (click)="toDestination()" routerLink="/KontaktSectionComponent" routerLinkActive="active">Kontakt</a></li>
+      <li class="navbar__li-list" style="margin-right: 0;"><button>
+        <img class="navbar__li-list--icon" src="../../../assets/icon/loupe.png" alt="">
       </button></li>
-      <li class="nav-button" style=" margin: 0;"><button>
-        <a href="#" class="button" style="padding: 10px 20px;"><span>Umów konsultację</span></a>
-      </button></li>
+      <li class="navbar__button" style=" margin: 0;">
+        <button >
+          <a  href="#" class="navbar__button--link" style="padding: 10px 20px;">Umów konsultację</a>
+        </button>
+      </li>
     </ul>
   </div>
 </nav>
